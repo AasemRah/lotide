@@ -1,11 +1,4 @@
 
-const eqArrays = function (arr1, arr2){
-  for(let x = 0; x < arr1.length; x++) {
-    if(arr1[x] !== arr2[x])
-    return false;
-  }
-  return true;
-}
 
 const assertArrayEqual = function(actual, expected) {
   let equivalentArrays = eqArrays(actual, expected);
@@ -27,7 +20,7 @@ const middle = function (array){
 
 }
 
+module.exports = middle;
+
 // TEST CODE
-assertArrayEqual(middle([4, 5, 6]), [5]);
-assertArrayEqual(middle([1, 2, 3, 4]), [2, 3]);
-assertArrayEqual(middle([1, 2]), []);
+
